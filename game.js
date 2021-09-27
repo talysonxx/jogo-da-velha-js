@@ -25,8 +25,6 @@ function handleMove(position) {
       time++
     }
   }
-
-  return gameOver
 }
 
 function resetGame() {

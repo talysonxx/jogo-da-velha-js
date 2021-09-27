@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  let pieces = document.querySelectorAll('.piece')
+  let pieces = document.querySelectorAll('div.piece')
   let player = document.querySelector('span#player')
   player.innerHTML = `Vez do jogador ${(symbols[playerTime]) == 'x' ? '🌑' : '🌕'}`
 
@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // functions
 function handleClick({target}) {
-  console.log(symbols[playerTime])
   let position = target.id
   handleMove(position)
   updatePiece(position)
