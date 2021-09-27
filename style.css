@@ -1,0 +1,91 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* style */
+body {
+  background-color: #EBEEDB;
+}
+main {
+  text-align: center;
+  margin-top: 30px;
+}
+#display {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  height: 130px;
+}
+#player {
+  color: blue;
+}
+#winner {
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 20px;
+}
+#board {
+  background-color: #CFE6DC;
+  display: inline-block;
+  padding: 5px;
+}
+#row-2 {
+  margin: 10px 0;
+}
+.piece {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  background-color: #BC9F97;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  display: inline-block;
+}
+.o {
+  position: relative;
+}
+.o::after {
+  content: "\1F311";
+  font-size: 30px;
+  line-height: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.x {
+  position: relative;
+}
+.x::after {
+  content: "\1F315";
+  font-size: 30px;
+  line-height: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#settings {
+  display: none;
+}
+button {
+  padding: 2px 15px;
+  margin-top: 20px;
+  border: none;
+  color: #D19891;
+  background-color: #F7FCF6;
+}
+button:hover {
+  cursor: pointer;
+  color: #F7FCF6;
+  background-color: #D19891;
+}
