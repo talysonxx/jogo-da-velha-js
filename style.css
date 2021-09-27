@@ -38,7 +38,7 @@ main {
   padding: 5px;
 }
 #row-2 {
-  margin: 10px 0;
+  margin: 4px 0;
 }
 .piece {
   cursor: pointer;
@@ -48,11 +48,15 @@ main {
   border: 1px solid rgba(0, 0, 0, 0.5);
   display: inline-block;
 }
+.piece:hover {
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
 .o {
   position: relative;
 }
 .o::after {
-  content: "\1F311";
+  content: "\1F315";
   font-size: 30px;
   line-height: 100px;
   position: absolute;
@@ -65,7 +69,7 @@ main {
   position: relative;
 }
 .x::after {
-  content: "\1F315";
+  content: "\1F311";
   font-size: 30px;
   line-height: 100px;
   position: absolute;
