@@ -8,6 +8,38 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main>
+    <div id="display">
+      <h1 id="title">Jogo da Velha</h1>
+      <span id="player"></span>
+      <span id="winner"></span>
+    </div>
+
+    <div id="board">
+      <div class="row 1">
+        <div id="0" class="piece">1</div>
+        <div id="1" class="piece">2</div>
+        <div id="2" class="piece">3</div>
+      </div>
+
+      <div class="row 2">
+        <div id="3" class="piece">4</div>
+        <div id="4" class="piece">5</div>
+        <div id="5" class="piece">6</div>
+      </div>
+
+      <div class="row 3">
+        <div id="6" class="piece">7</div>
+        <div id="7" class="piece">8</div>
+        <div id="8" class="piece">9</div>
+      </div>
+    </div>
+
+    <div id="settings">
+      <button onClick="resetGame()"></button>
+    </div>
+  </main>
+
   <script src="index.js"></script>
 </body>
 </html>
